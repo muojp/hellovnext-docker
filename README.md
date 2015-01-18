@@ -13,7 +13,7 @@ Hello World
 
 this will fetch everything needed and start embedded web server.
 
-Then, open http://localhost:5000/ will show you the "Hello World" page.
+Then, opening http://localhost:5000/ will show you the "Hello World" page.
 
 ## Some playing scenarios
 
