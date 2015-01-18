@@ -21,9 +21,9 @@ Then, opening http://localhost:5000/ will show you the "Hello World" page.
 
 ```
 $ docker run -i -t -p 5000:5000 muojp/hellovnext-docker:latest /bin/bash -i
-root@a376f9311b4c:~/helloworld/src/helloworldweb# pwd
-/root/helloworld/src/helloworldweb
-root@a376f9311b4c:~/helloworld/src/helloworldweb# cat Startup.cs 
+root@0ec26fddd651:/opt/helloworld/src/helloworldweb# pwd
+/opt/helloworld/src/helloworldweb
+root@0ec26fddd651:/opt/helloworld/src/helloworldweb# cat Startup.cs
 using System;
 using System.Net.WebSockets;
 using System.Threading.Tasks;
@@ -35,14 +35,14 @@ using System.Threading.Tasks;
             await context.Response.WriteAsync(payload);
         });
 ...
-root@2008d85428cc:~/helloworld/src/helloworldweb# apt-get install vim
-root@2008d85428cc:~/helloworld/src/helloworldweb# vim Startup.cs 
+root@0ec26fddd651:/opt/helloworld/src/helloworldweb# apt-get install vim
+root@0ec26fddd651:/opt/helloworld/src/helloworldweb# vim Startup.cs 
 ```
 
 Change the file as you like, and then 
 
 ```
-root@2008d85428cc:~/helloworld/src/helloworldweb# k web
+root@0ec26fddd651:/opt/helloworld/src/helloworldweb# k web
 ```
 
 to launch web server. Then, execute `Ctrl+p Ctrl+q` to detach from the container.
