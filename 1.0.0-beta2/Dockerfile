@@ -1,4 +1,4 @@
-FROM muojp/aspnet-docker:1.0.0-beta1
+FROM muojp/aspnet-docker:1.0.0-beta2
 
 RUN apt-get -qqy install git
 RUN git clone https://github.com/davidfowl/HelloWorldVNext /opt/helloworld
